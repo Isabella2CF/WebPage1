@@ -1,0 +1,34 @@
+body { 
+    font-family: "Arial", "sans-serif";
+    font-size: 14px ;
+    line-height: 1.6 ;
+    background-color: #f9f9f9f9;
+    color: #333;
+    margin: 5;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes color-change {
+    0% {color: blue;}
+    50% {color: red;}
+    100% {color: blue;}
+}
+
+@keyframes slide-in {
+    from{transform:translateY(20px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+h1 {
+    animation: slide-in 1s ease-in-out;
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
